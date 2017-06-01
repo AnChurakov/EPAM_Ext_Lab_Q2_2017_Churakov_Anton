@@ -11,11 +11,14 @@ using System.Threading.Tasks;
 
 namespace Task01
 {
-    class Program
-    {
+    class Program //todo pn в папке с заданием у тебя аж 3 солюшена. Переделай на 1 солюшн с двумя проектами внутри. Лишние солюшены удали.
+	{
         static void Main(string[] args)
         {
-            float x, y;
+	        Console.InputEncoding = Encoding.Unicode;//todo pn без явного задания кодировки будет использована кодировка по умолчанию. Машина, на которой я проверяю настроена на английскую культуру, поэтому кириллические символы отображаются в ней как знаки вопроса. Следует учитывать такое специфичное поведение консоли в следующих заданиях :)
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			float x, y;
 
             Console.WriteLine("Введите координаты точки x и y");
 
@@ -23,7 +26,7 @@ namespace Task01
 
             y = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите букву графика (а-к)");
+            Console.WriteLine("Введите букву графика (а-к)");//todo pn если пользователь вводит недопустимый символ консоль закрывается. А не должна. Нужно просить повторить ввод (неуважение к пользователю все дела ;)).
             
             string str = Console.ReadLine();
 
@@ -37,7 +40,7 @@ namespace Task01
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);//todo pn очень много повторяющегося кода сообщений. Выдели глобальную переменную на это или константу
                 }
             }
 
@@ -136,6 +139,8 @@ namespace Task01
                     Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
                 }
             }
+
+			//todo pn а где "и"?
 
             if (str == "к")
             {

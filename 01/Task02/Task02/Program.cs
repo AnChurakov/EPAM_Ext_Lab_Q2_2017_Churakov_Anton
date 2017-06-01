@@ -15,7 +15,10 @@ namespace Task02
     {
         static void Main(string[] args)
         {
-            double h, D, a, x1, x2, b, c;
+	        Console.InputEncoding = Encoding.Unicode;
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			double h, D, a, x1, x2, b, c;
 
             Console.WriteLine("Введите число h");
             h = double.Parse(Console.ReadLine());
