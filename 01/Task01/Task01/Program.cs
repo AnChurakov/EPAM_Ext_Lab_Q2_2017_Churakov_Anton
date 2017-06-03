@@ -19,57 +19,58 @@ namespace Task01
 	        Console.OutputEncoding = Encoding.Unicode;
 
 			float x, y;
+            char str;
+            string success = "Точка x={0} y={1} принадлежит фигуре {2}!";
+            string fail = "Точка не принадлежит фигуре {0}!";
 
             Console.WriteLine("Введите координаты точки x и y");
 
             x = float.Parse(Console.ReadLine());
 
             y = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Введите букву графика (а-к)");//todo pn если пользователь вводит недопустимый символ консоль закрывается. А не должна. Нужно просить повторить ввод (неуважение к пользователю все дела ;)).
             
-            string str = Console.ReadLine();
+            Console.WriteLine("Введите букву графика (а-к)");//todo pn если пользователь вводит недопустимый символ консоль закрывается. А не должна. Нужно просить повторить ввод (неуважение к пользователю все дела ;)
 
-            if (str == "а")
+            str = Console.ReadKey().KeyChar;
+
+            if (str == 'а')
             {
-                int radius = 1;
 
-                if ((x <= 1) && (x >= 0) && (y <= 1) && (y >= 0) && (x * x + y * y <= 1))
+                if ((x <= 1) && (x >= 0) && (y <= 1) && (y >= 0) && ((x * x) + (y * y) <= 1))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);//todo pn очень много повторяющегося кода сообщений. Выдели глобальную переменную на это или константу
+                    Console.WriteLine(fail, str);//todo pn очень много повторяющегося кода сообщений. Выдели глобальную переменную на это или константу
                 }
             }
 
+            /*
             if (str == "б")
             {
-                if (((x >= 0.5) && (x <= 1) && (y >= 0.5) && (y <= 1) && (x * x + y * y <= 1)) || ((x >= -1) && (x <= -0.5) && (y >= 0.5) && (y <= 1) && (x * x + y * y <= 1)) ||
-                        ((x >= -1) && (x <= -0.5) && (y >= -0.5) && (y <= -1) && (x * x + y * y <= -1)) || ((x >= 0.5) && (x <= 1) && (y <= -0.5) && (y >= -1)))
+                if (((x >= 0.5) && (x <= 1) && (y >= 0.5) && (y <= 1) && ((x * x) + (y * y) <= 1)) || ((x >= -1) && (x <= -0.5) && (y >= 0.5) && (y <= 1) && ((x * x) + (y * y) <= 1)) ||
+                        ((x >= -1) && (x <= -0.5) && (y >= -0.5) && (y <= -1) && ((x * x) + (y * y) <= -1)) || ((x >= 0.5) && (x <= 1) && (y <= -0.5) && (y >= -1)))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
             }
 
             if (str == "в")
             {
                 if (((x <= 1) && (x >= 0) && (y <= 1) && (y >= 0)) || ((x >= -1) && (x <= 0) && (y <= 1) && (y >= 0))
-                        || ((x >= -1) && (x <= 0) && (y >= -1) && (y <= 0)) || (x >= 0) && (x <= 1) && (y >= -1) && (y <= 0))
+                        || ((x >= -1) && (x <= 0) && (y >= -1) && (y <= 0)) || ((x >= 0) && (x <= 1) && (y >= -1) && (y <= 0)))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
-
+                    Console.WriteLine(fail, str);
                 }
-
             }
 
             if (str == "г")
@@ -78,13 +79,12 @@ namespace Task01
                     ((x >= -1) && (x <= 0) && (y >= -1) && (y <= 0) && (y <= -x - 1)) || ((x <= 1) && (x >= 0) && (y >= -1) && (y <= 0) && (y <= x - 1))
                     )
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
-
             }
 
             if (str == "д")
@@ -93,11 +93,11 @@ namespace Task01
                     ((x >= -0.5) && (x <= 0) && (y >= -1) && (y <= 0) && (y <= -x - 1)) || ((x <= 0.5) && (x >= 0) && (y >= -1) && (y <= 0) && (y <= x - 1))
                     )
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
 
             }
@@ -105,26 +105,26 @@ namespace Task01
             if (str == "е")
             {
                 if (((y <= 1) && (y >= 0) && (x >= -2) && (x <= 0) && (y <= x + 2)) || ((y >= -1) && (y <= 0) && (x >= -2) && (x <= 0) && (y <= -x - 2)) ||
-                        ((x <= 1) && (x >= 0) && (y <= -1) && (y >= 0) && (x * x + y * y <= 1)) || ((y <= 1) && (y >= 0) && (x <= 1) && (x >= 0) && (x * x + y * y <= 1)))
+                        ((x <= 1) && (x >= 0) && (y <= -1) && (y >= 0) && ((x * x) + (y * y) <= 1)) || ((y <= 1) && (y >= 0) && (x <= 1) && (x >= 0) && ((x * x) + (y * y) <= 1)))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
             }
 
             if (str == "ж")
             {
-                if (((y <= 2) && (y >= 0) && (x >= -1) && (x <= 0) && (y <= 2 * x + 2)) || ((y >= -1) && (y <= 0) && (x >= -1) && (x <= 0) && (y <= 2 * x + 2)) ||
-                        ((y <= 2) && (y >= 0) && (x <= 1) && (x >= 0) && (y <= -2 * x + 2)) || ((x <= 1) && (x >= 0) && (y >= -1) && (y <= 0) && (y <= -2 * x + 2)))
+                if (((y <= 2) && (y >= 0) && (x >= -1) && (x <= 0) && (y <= (2 * x) + 2)) || ((y >= -1) && (y <= 0) && (x >= -1) && (x <= 0) && (y <= (2 * x) + 2)) ||
+                        ((y <= 2) && (y >= 0) && (x <= 1) && (x >= 0) && (y <= (-2 * x) + 2)) || ((x <= 1) && (x >= 0) && (y >= -1) && (y <= 0) && (y <= (-2 * x) + 2)))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
             }
 
@@ -132,11 +132,11 @@ namespace Task01
             {
                 if (((x <= 1) && (x >= 0) && (y <= Math.Abs(x))) || ((x >= -1) && (x <= 0) && (y <= Math.Abs(x))) || ((x >= -1) && (x <= 0) && (y >= -2) && (y <= 0)) || ((x <= 1) && (x >= 0) && (y >= -2) && (y <= 0)))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
             }
 
@@ -146,15 +146,17 @@ namespace Task01
             {
                 if ((y>=Math.Abs(x)) && (y>=0) && (x>=1) || (x<=-1))
                 {
-                    Console.WriteLine("Точка x={0} y={1} принадлежит фигуре {2}!", x, y, str);
+                    Console.WriteLine(success, x, y, str);
                 }
                 else
                 {
-                    Console.WriteLine("Точка не принадлежит фигуре {0}!", str);
+                    Console.WriteLine(fail, str);
                 }
-
+                
                 Console.ReadKey();
             }
+            */
+            Console.ReadKey();
         }
     }
 }
