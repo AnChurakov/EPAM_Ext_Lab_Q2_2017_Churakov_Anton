@@ -12,7 +12,7 @@ StringBuilder для операции сложения строк
 
 namespace Task03
 {
-    class Program
+    class Program//todo pn не увидел исследовательской работы.
     {
         public static void CheckString(int n)
         {
@@ -48,8 +48,10 @@ namespace Task03
 
         static void Main(string[] args)
         {
-            
-            CheckString(100);
+			Console.InputEncoding = Encoding.Unicode;
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			CheckString(100);
 
             CheckBuilder(100);
 

@@ -15,7 +15,10 @@ namespace Task02
     {
         static void Main(string[] args)
         {
-            string first  = "";
+	        Console.InputEncoding = Encoding.Unicode;
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			string first  = "";
             string second  = "";
             string FinalString = "";
             Console.WriteLine("Введи первую строку");
