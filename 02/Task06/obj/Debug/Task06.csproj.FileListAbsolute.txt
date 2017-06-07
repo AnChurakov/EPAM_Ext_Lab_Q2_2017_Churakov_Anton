@@ -4,3 +4,9 @@ C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_02\Task06\bin\Debug\
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_02\Task06\obj\Debug\Task06.exe
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_02\Task06\obj\Debug\Task06.pdb
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_02\Task06\obj\Debug\Task06.csprojResolveAssemblyReference.cache
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\02\Task06\bin\Debug\Task06.exe.config
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\02\Task06\bin\Debug\Task06.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\02\Task06\bin\Debug\Task06.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\02\Task06\obj\Debug\Task06.csprojResolveAssemblyReference.cache
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\02\Task06\obj\Debug\Task06.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\02\Task06\obj\Debug\Task06.pdb

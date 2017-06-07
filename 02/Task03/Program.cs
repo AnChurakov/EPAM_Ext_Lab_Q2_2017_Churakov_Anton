@@ -15,11 +15,27 @@ namespace Task03
     {
         static void Main(string[] args)
         {
-            int i, j, m;
+            int i, j, m, N = 0;
 
             Console.WriteLine("Введите число N");
 
-            int N = int.Parse(Console.ReadLine()); //todo pn упадет здесь, если введут не число
+            while (N <= 0)
+            {
+                try
+                {
+                    N = Convert.ToInt32(Console.ReadLine());
+
+                    if (N < 0)
+                    {
+                        Console.WriteLine("Введите положительное число!");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Введите число!");
+                }
+            }
+                
 			for (i = N; i != 0; i--)
             {
                 for (j = i; j != 0; j--)

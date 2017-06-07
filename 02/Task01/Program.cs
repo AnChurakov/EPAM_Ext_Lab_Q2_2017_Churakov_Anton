@@ -26,7 +26,7 @@ namespace Task01
 
             Console.WriteLine("Введите число А и Б");
 
-            while (!isNumber)
+            while (s == 0)
             {
                 try
                 {

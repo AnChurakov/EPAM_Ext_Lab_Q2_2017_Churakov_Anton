@@ -22,22 +22,21 @@ namespace Task06
 			Console.InputEncoding = Encoding.Unicode;//todo pn просил же добавлять...
 	        Console.OutputEncoding = Encoding.Unicode;
 
+            int n = 0;
 			string original = "";
             string bold = " Bold";
             string italic = " Italic";
-            string underline = " underline";//todo pn если везде с большой буквы, то и здесь с большой
-            bool isNumber = false;
-            string str = "Параметры надписи:{0}\n Введите \n 1.Bold\n 2.Italic\n 3.Underline\n";
+            string underline = " Underline";//todo pn если везде с большой буквы, то и здесь с большой
+            string str = "Параметры надписи:{0}\n Введите \n 1.Bold\n 2.Italic\n 3.Underline\n 4.Выход из программы";
 
             Console.WriteLine(str);
 
-            while (!isNumber)//todo pn цикл бесконечный, как пользователю выйти из консоли? мб он боится нажимать крестик?
+            while (n != 4)//todo pn цикл бесконечный, как пользователю выйти из консоли? мб он боится нажимать крестик?
             {
                 try
                 {
-                 
 
-                    int n = Convert.ToInt32(Console.ReadLine());
+                    n = Convert.ToInt32(Console.ReadLine());
                     if (n == 1)
                     {
                         if (original != "")
@@ -112,9 +111,7 @@ namespace Task06
                 }
             }
 
-          
-
-            Console.ReadKey();
+         
         }
 
 
