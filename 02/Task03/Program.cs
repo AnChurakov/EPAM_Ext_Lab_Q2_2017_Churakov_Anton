@@ -19,8 +19,8 @@ namespace Task03
 
             Console.WriteLine("Введите число N");
 
-            int N = int.Parse(Console.ReadLine());
-            for (i = N; i != 0; i--)
+            int N = int.Parse(Console.ReadLine()); //todo pn упадет здесь, если введут не число
+			for (i = N; i != 0; i--)
             {
                 for (j = i; j != 0; j--)
                 {

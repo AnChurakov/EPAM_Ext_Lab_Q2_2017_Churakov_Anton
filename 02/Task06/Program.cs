@@ -19,17 +19,19 @@ namespace Task06
     {
         static void Main(string[] args)
         {
-            
-            string original = "";
+			Console.InputEncoding = Encoding.Unicode;//todo pn просил же добавлять...
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			string original = "";
             string bold = " Bold";
             string italic = " Italic";
-            string underline = " underline";
+            string underline = " underline";//todo pn если везде с большой буквы, то и здесь с большой
             bool isNumber = false;
             string str = "Параметры надписи:{0}\n Введите \n 1.Bold\n 2.Italic\n 3.Underline\n";
 
             Console.WriteLine(str);
 
-            while (!isNumber)
+            while (!isNumber)//todo pn цикл бесконечный, как пользователю выйти из консоли? мб он боится нажимать крестик?
             {
                 try
                 {

@@ -22,7 +22,7 @@ namespace Task02
 
             Console.WriteLine("Введите число N");
 
-            n = int.Parse(Console.ReadLine());
+            n = int.Parse(Console.ReadLine()); //todo pn упадет здесь, если введут не число
 
             for (i = 0; i < n; i++)
             {
