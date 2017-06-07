@@ -15,9 +15,12 @@ namespace Task04
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            int i, j, sum = 0;
+        static void Main(string[] args)//todo pn  В консоли ничего не понятно.
+		{
+	        Console.InputEncoding = Encoding.Unicode;
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			int i, j, sum = 0;
             int[,] mas = new int[10, 10];
 
             Random rand = new Random();

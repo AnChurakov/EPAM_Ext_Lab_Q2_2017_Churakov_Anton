@@ -19,7 +19,10 @@ namespace Task01
     {
         static void Main(string[] args)
         {
-            int max, min, i, j;
+			Console.InputEncoding = Encoding.Unicode;//todo pn просил же добавлять
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			int max, min, i, j;
             int[] arr = new int[10];
             int[] mas = new int[10];
 

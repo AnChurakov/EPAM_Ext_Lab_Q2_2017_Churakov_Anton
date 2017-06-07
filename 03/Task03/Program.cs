@@ -16,7 +16,10 @@ namespace Task03
     {
         static void Main(string[] args)
         {
-            int i, sum = 0;
+	        Console.InputEncoding = Encoding.Unicode;
+	        Console.OutputEncoding = Encoding.Unicode;
+
+			int i, sum = 0;
             int[] mas = new int[10];
 
             Random rand = new Random();

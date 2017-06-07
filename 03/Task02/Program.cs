@@ -14,10 +14,12 @@ namespace Task02
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)//todo pn вот что я сказал, когда запустил этот проект: "Е-маё, что происходит?!". В консоли ничего не понятно.
         {
+	        Console.InputEncoding = Encoding.Unicode;
+	        Console.OutputEncoding = Encoding.Unicode;
 
-            int i, j, k;
+			int i, j, k;
             int[,,] mas = new int[10,10,10];
 
             Random r = new Random();
