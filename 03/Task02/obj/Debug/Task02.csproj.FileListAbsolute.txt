@@ -3,3 +3,9 @@ C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task02\bin\Debug\
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task02\bin\Debug\Task02.pdb
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task02\obj\Debug\Task02.exe
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task02\obj\Debug\Task02.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task02\bin\Debug\Task02.exe.config
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task02\bin\Debug\Task02.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task02\bin\Debug\Task02.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task02\obj\Debug\Task02.csprojResolveAssemblyReference.cache
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task02\obj\Debug\Task02.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task02\obj\Debug\Task02.pdb

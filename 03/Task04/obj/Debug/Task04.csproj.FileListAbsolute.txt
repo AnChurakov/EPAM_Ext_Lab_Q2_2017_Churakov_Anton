@@ -3,3 +3,8 @@ C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task04\bin\Debug\
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task04\bin\Debug\Task04.pdb
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task04\obj\Debug\Task04.exe
 C:\Users\1\Documents\Visual Studio 2017\Projects\HMT_01\HWT_03\Task04\obj\Debug\Task04.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task04\bin\Debug\Task04.exe.config
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task04\bin\Debug\Task04.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task04\bin\Debug\Task04.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task04\obj\Debug\Task04.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\03\Task04\obj\Debug\Task04.pdb

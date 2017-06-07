@@ -19,8 +19,10 @@ namespace Task02
 	        Console.InputEncoding = Encoding.Unicode;
 	        Console.OutputEncoding = Encoding.Unicode;
 
+            Console.WriteLine("Замена все положительных чисел на ноли в трехмерном массиве");
+
 			int i, j, k;
-            int[,,] mas = new int[10,10,10];
+            int[,,] mas = new int[10, 10, 10];
 
             Random r = new Random();
 
@@ -32,7 +34,7 @@ namespace Task02
                     {
                         mas[i, j, k] = r.Next(-10, 10);
 
-                        if (mas[i,j,k] > 0)
+                        if (mas[i, j, k] > 0)
                         {
                             mas[i, j, k] = 0;
                         }

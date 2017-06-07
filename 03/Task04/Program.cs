@@ -20,6 +20,8 @@ namespace Task04
 	        Console.InputEncoding = Encoding.Unicode;
 	        Console.OutputEncoding = Encoding.Unicode;
 
+            Console.WriteLine("Определение суммы элементов, укоторых позиция является четной");
+
 			int i, j, sum = 0;
             int[,] mas = new int[10, 10];
 
