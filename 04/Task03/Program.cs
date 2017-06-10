@@ -52,8 +52,14 @@ namespace Task03
 	        Console.OutputEncoding = Encoding.Unicode;
 
 			CheckString(100);
+            CheckString(200);
+            CheckString(500);
+            CheckString(1000);
 
             CheckBuilder(100);
+            CheckBuilder(200);
+            CheckBuilder(500);
+            CheckBuilder(1000);
 
             Console.ReadKey();
         }

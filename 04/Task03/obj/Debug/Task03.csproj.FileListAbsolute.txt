@@ -4,3 +4,9 @@ c:\users\1\documents\visual studio 2017\Projects\HWT_04\Task03\bin\Debug\Task03.
 c:\users\1\documents\visual studio 2017\Projects\HWT_04\Task03\obj\Debug\Task03.csprojResolveAssemblyReference.cache
 c:\users\1\documents\visual studio 2017\Projects\HWT_04\Task03\obj\Debug\Task03.exe
 c:\users\1\documents\visual studio 2017\Projects\HWT_04\Task03\obj\Debug\Task03.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\04\Task03\bin\Debug\Task03.exe.config
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\04\Task03\bin\Debug\Task03.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\04\Task03\bin\Debug\Task03.pdb
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\04\Task03\obj\Debug\Task03.csprojResolveAssemblyReference.cache
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\04\Task03\obj\Debug\Task03.exe
+D:\epam\EPAM_Ext_Lab_Q2_2017_Churakov_Anton\04\Task03\obj\Debug\Task03.pdb

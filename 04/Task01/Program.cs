@@ -18,9 +18,14 @@ namespace Task01
 			Console.InputEncoding = Encoding.Unicode;
 			Console.OutputEncoding = Encoding.Unicode;
 
-			string str = "";
+            string str;
+           
             Console.WriteLine("Введите строку");
+
             str = Console.ReadLine();
+            char[] CH = str.ToCharArray();
+
+
             string[] words = str.Split(new[] { ' ', '!', '?', ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);//todo pn говорил использовать стандартные средства класса Char(IsDigit итп).
 
             int averageLenght = words.Aggregate(0, (count, nextWord) => count += nextWord.Length) / words.Length;
