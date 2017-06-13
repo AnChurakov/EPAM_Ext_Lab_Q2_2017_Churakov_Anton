@@ -20,7 +20,7 @@ namespace Task02
         
         public Triangle(int a, int b, int c)
         {
-            this.a = a;
+            this.a = a;//todo pn а если ввели отрезки, из которых невозможно составить треугольник? нужна проверка.
             this.b = b;
             this.c = c;
         }
@@ -40,8 +40,8 @@ namespace Task02
         public double Area()
         {
             double P = PolyPerim();
-            double S = Math.Sqrt(P * (P - a) * (P - b) * (P - c));
-            return S;
+            double S = Math.Sqrt(P * (P - a) * (P - b) * (P - c));//todo pn бессмысленная переменная 
+			return S;
         }
         
 
