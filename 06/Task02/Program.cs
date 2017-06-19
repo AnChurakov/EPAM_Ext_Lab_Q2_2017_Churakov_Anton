@@ -14,8 +14,8 @@ using System.Threading.Tasks;
 
 namespace Task02
 {
-    class Round
-    {
+    class Round//todo pn в отдельный файл
+	{
         int x { get; set; }
         int y { get; set; }
         int radius { get; set; } // радиус круга и внутренний радиус
@@ -29,8 +29,8 @@ namespace Task02
 
         public int GetRadius()
         {
-            return radius;
-        }
+            return radius;//todo pn где проверка на отрицательность?
+		}
 
         public double Area()
         {
@@ -47,15 +47,15 @@ namespace Task02
 
     }
 
-    class Ring : Round
-    {
+    class Ring : Round//todo pn в отдельный файл
+	{
      
         int R { get; set; } // внешний радиус
 
         public Ring(int x, int y, int r, int R) : base(x, y, r) 
         {
-            this.R = R;
-        }
+            this.R = R;//todo pn аналогично
+		}
 
         public double GetAreaRing()//площадь кольца
         {
@@ -71,8 +71,8 @@ namespace Task02
        
     }
 
-    class Program
-    {
+    class Program//todo pn в отдельный файл
+	{
         static void Main(string[] args)
         {
             Console.InputEncoding = Encoding.Unicode;

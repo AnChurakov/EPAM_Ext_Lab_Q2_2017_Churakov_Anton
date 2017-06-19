@@ -19,10 +19,10 @@ using System.Threading.Tasks;
 //Цель игры–собрать все бонусы
 //и не быть «съеденным» монстрами
 
-namespace Task04
+namespace Task04//todo pn маловато будет реализации для игры
 {
-    class Area
-    {
+    class Area//todo pn в отдельный файл
+	{
          int Width { get; set; }
          int Height { get; set; }
          
@@ -33,8 +33,8 @@ namespace Task04
         }
     }
 
-    class Enemy
-    {
+    class Enemy//todo pn в отдельный файл
+	{
         int Attack { get; set; } //урон
         int SpeedAttack { get; set; }// скорость атаки
         int x { get; set; }
@@ -69,8 +69,8 @@ namespace Task04
         }
     }
 
-    class Wolf : Enemy
-    {
+    class Wolf : Enemy//todo pn в отдельный файл
+	{
         public Wolf(int attack, int speedattack, int x, int y) : base(attack, speedattack, x, y)
         {
         }
@@ -96,8 +96,8 @@ namespace Task04
         }
     }
     
-    class Player
-    {
+    class Player//todo pn в отдельный файл
+	{
         int Health { get; set; }//здоровье 
         int x { get; set; }
         int y { get; set; }
@@ -126,8 +126,8 @@ namespace Task04
         }
     }
 
-    class Bonus
-    {
+    class Bonus//todo pn в отдельный файл
+	{
         string NameBonus { get; set; }
         int ValueBonus { get; set; }
         int x { get; set; }
@@ -162,8 +162,8 @@ namespace Task04
         }
     }
 
-    class Apple : Bonus
-    {
+    class Apple : Bonus//todo pn в отдельный файл
+	{
         public Apple(int x, int y, string NameBonus, int ValueBonus) : base(x, y, NameBonus, ValueBonus)
         {
         }
@@ -189,11 +189,13 @@ namespace Task04
         }
     }
 
-    class Program
-    {
+    class Program//todo pn в отдельный файл
+	{
         static void Main(string[] args)
         {
          
         }
     }
+
+	//todo pn где препятствия?
 }
