@@ -25,7 +25,7 @@ namespace Task03
             this.Firstname = Firstname;
             this.Lastname = Lastname;
             this.Patronymic = Patronymic;
-            this.Age = Age;
+            this.Age = Age;//todo pn т.е. ты задаешь и возраст и дату рождения? Серьезно? Мб, сделать её вычисляемой из даты рождения?
             this.BirthDate = BirthDate;
         }
 

@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Task01
 {
 
-    class User
+    class User//todo pn в отдельный файл
     {
         string Firstname { get; set; }
         string Lastname { get; set; }
@@ -26,7 +26,7 @@ namespace Task01
             this.Firstname = Firstname;
             this.Lastname = Lastname;
             this.Patronymic = Patronymic;
-            this.Age = Age;
+            this.Age = Age;//todo pn т.е. возраст и дата рождения - независящие друг от друга характеристики?
             this.BirthDate = BirthDate;
         }
 
@@ -56,8 +56,8 @@ namespace Task01
         }
     }
 
-    class Employee : User
-    {
+    class Employee : User//todo pn в отдельный файл
+	{
         string Position { get; set; }
         string WorkExp { get; set; }
 
@@ -65,8 +65,8 @@ namespace Task01
             : base(Firstname, Lastname, Patronymic, Age, BirthDate)
         {
             this.Position = Position;
-            this.WorkExp = WorkExp;
-        }
+            this.WorkExp = WorkExp;//todo pn где проверка на то, что меньше возраста?
+		}
 
         public string GetPostion()
         {
@@ -79,8 +79,8 @@ namespace Task01
         }
     }
 
-    class Program
-    {
+    class Program//todo pn в отдельный файл
+	{
         static void Main(string[] args)
         {
             Console.InputEncoding = Encoding.Unicode;

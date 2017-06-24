@@ -25,7 +25,7 @@ namespace Task01
         {
             this.x = x;
             this.y = y;
-            radius = r;
+            radius = r;//todo pn а если задали отрицательный радиус? нужна проверка
         }
 
         public double Area()
