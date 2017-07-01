@@ -1,0 +1,5 @@
+c:\users\1\documents\visual studio 2017\Projects\HWT_09\Task02\bin\Debug\Task02.exe.config
+c:\users\1\documents\visual studio 2017\Projects\HWT_09\Task02\bin\Debug\Task02.exe
+c:\users\1\documents\visual studio 2017\Projects\HWT_09\Task02\bin\Debug\Task02.pdb
+c:\users\1\documents\visual studio 2017\Projects\HWT_09\Task02\obj\Debug\Task02.exe
+c:\users\1\documents\visual studio 2017\Projects\HWT_09\Task02\obj\Debug\Task02.pdb
