@@ -25,7 +25,7 @@ namespace Task03
 
         public static int linq(List<int> mas)
         {
-            var lst = from item in mas where item > 0 select item;
+            var lst = from item in mas where item > 0 select item;//todo pn плохо писать, не форматируя. Ничего не понятно.
 
             int sum = 0;
 
@@ -58,7 +58,7 @@ namespace Task03
                 i++;
             }
 
-            int digit_second = mas.SearchElem(); //количество положительных элементов в массиве
+            int digit_second = mas.SearchElem(); //количество положительных элементов в массиве //todo pn не увидел 5 кейсов
 
             Console.WriteLine("Количество положительных элементов в массиве = {0}", digit_second );
 
