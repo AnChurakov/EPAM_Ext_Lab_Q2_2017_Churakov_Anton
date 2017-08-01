@@ -17,11 +17,11 @@ namespace Task02
         public static bool CheckStr(this string str)
         {
             bool itog;
-            int i;
+            int i;//todo pn м?
 
-            itog = str.Length == str.Where(c => char.IsDigit(c) && c >= 0).Count();
+            itog = str.Length == str.Where(c => char.IsDigit(c) && c >= 0).Count(); //todo pn str.Count(c => char.IsDigit(c) && c >= 0) можно сократить
 
-            return itog;
+			return itog;
         }
 
     }

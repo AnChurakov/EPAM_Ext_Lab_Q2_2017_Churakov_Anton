@@ -41,7 +41,7 @@ namespace Task01
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
 
-            while (i < 10)
+            while (i < 10)//todo pn ну мы программисты или хардкодщики?))
             {
                 digit = int.Parse(Console.ReadLine());
                 mas.Add(digit);
